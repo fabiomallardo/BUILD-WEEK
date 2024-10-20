@@ -1,0 +1,9 @@
+1. Pagina Welcome: checkbox + consenso ad iniziare il test. HTML, CSS, JS (Nicolò)
+2. TIMER - conto alla rovescia, barra scorrimento. HTML, CSS, JS (Andrea)
+3. Selezione random delle domande e relative risposte (escludendo quelle già uscite), disposizione nel DOM. HTML, CSS, JS (Diego)
+4. Scelta della risposta, verifica correttezza, punteggio, immissione in deposito domande già fatte. HTML, CSS, JS (ELIA)
+5. Avanzamento a domanda successiva con Tasto o con scadenza Timer. HTML, CSS, JS (Alessandro)
+6. Esposizione risultato nel DOM, calcolo della percentuale, test superato/non superato. HTML, CSS, JS (Fabio)
+
+Link di Daniel
+https://github.com/D4n1-3p1c0d3/benchmark

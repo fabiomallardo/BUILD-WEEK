@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildWeek 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+            <!-- ------------------------------- NICOLÒ ------------------------------ -->
+
+    <div id="nicolo">
+        <main>
+            <img src="assets/epicode_logo.png" id="logo" alt="Epicode Logo">
+
+            <h1>Welcome to <br> <b>your exam</b></h1>
+            <h3>Instructions</h3>
+            <p>We don't expect most engineers to know the answers to
+                all of these <br>questions, so don't worry if your're unsure of a few of them.</p>
+            <ul>
+                <li>Each question is <b>timed</b> and can only be <b>answered once</b>.</li>
+                <li>Changing browser tab or opening other windows will <b>invalidate the question</b>.</li>
+                <li>This exam will take approx. <b>0-5 minutes</b></li>
+            </ul>
+        </main>
+
+
+        <form id="Form">
+            <div class="flex">
+                <label class="box" for="terms">
+                    <input type="checkbox" id="terms">
+                    <span class="checkmark"></span>
+                </label>
+                <p>I promise to answer myself without help from anyone</p>
+            </div>
+            <button type="submit" id="btnSub" class="btnOff" disabled>PROCEED</button>
+        </form>
+    </div>
+
+        <!-- ------------------------------- ANDREA ------------------------------ -->
+        <div id="andrea">
+        <div class="header">
+            <img src="assets/epicode_logo.png" id="logo" alt="Epicode Logo">
+            <!-- Contenitore principale per il timer -->
+
+            <div class="contenitore">
+
+                <!-- Div contenitore per il cerchio e il testo del timer -->
+                <div class="div1">
+
+                    <!-- Cerchio esterno -->
+                    <div class="cerchio_esternoA">
+
+                        <!-- Cerchio interno che contiene il testo del timer -->
+                        <div class="cerchio_internoA">
+                            <div class="outfit interno">
+
+                                <p class="scritta">SECONDS</p>
+                                <p id="tempo">60</p>
+                                <p class="scritta">REMAINING</p>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="andreCerchio" width="160px" height="160px">
+                        <circle class="cerchioA" cx="80" cy="80" r="70" />
+                    </svg>
+
+                    <!-- SVG che disegna il cerchio animato con il countdown -->
+                    <svg class="andreCerchio" width="160px" height="160px">
+                        <!-- Cerchio SVG che verrà animato con l'animazione del timer -->
+                        <circle class="cerA" cx="80" cy="80" r="70" stroke-linecap="linear" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- ------------------------------- DIEGO ------------------------------ -->
+
+    <div id="diego">
+        <div id="testPage">
+            <div id="gruppoQA">
+                <div id="quest">
+                    <h3 id="domande"></h3>
+                </div>
+                <div id="risposte">
+                    <div id="sopra">
+                        <div id="button1"></div>
+                        <div id="button2"></div>
+                    </div>
+                    <div id="sotto">
+                        <div id="button3"></div>
+                        <div id="button4"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ------------------------------- footer ---------------------------- -->
+        <footer>
+            <p id="conta">QUESTION <span id="conteggio_domanda">1</span><span class="colore_span"> / 10 </span></p>
+            <div id="proceed">
+                <button type="submit" id="btnProcedi" class="btnOn">PROCEED</button>
+            </div>
+        </footer>
+    </div>
+        <!-- ------------------------------- FABIO ------------------------------ -->
+    <div id="fabio">
+        <img src="assets/epicode_logo.png" id="logo" alt="Epicode Logo"> 
+        <div id="immagineF">
+            <div id="mostraRisultati" style="display: none;"> <!-- Aggiunto display: none inizialmente -->
+                <div class="contenitore_grafico_percentuale">
+                    <div class="contenitore_cerchio">
+                        <div class="cerchio_esterno">
+                            <div class="cerchio_interno">
+                                <div class="outfit interno">
+                                    <div class="para">
+                                        <h2 id="esito"></h2>
+                                        <span id="percentuale"></span> <br>
+                                        <span id="numeroDomande"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <svg class="fabioCerchio" width="300px" height="300px">
+                                <circle class="cerchio" cx="150" cy="150" r="140" />
+                                <circle class="cer" cx="150" cy="150" r="140" stroke-linecap="linear" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="ulterioridettagli" style="display: none;"> <!-- Aggiunto display: none inizialmente -->
+                <div class="corretto">
+                    <p>Corretto</p>
+                    <h3 id="primo"></h3>
+                </div>
+                <div class="corretto">
+                    <p>Sbagliato</p>
+                    <h3 id="secondo"></h3>
+                </div>
+                <div class="corretto">
+                    <p>Vuoto</p>
+                    <h3 id="terzo"></h3>
+                </div>
+                <div class="corretto">
+                    <p>Totale</p>
+                    <h3 id="quarto"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
